@@ -1,2 +1,10 @@
 # Procedural-Tree-Generator
-This is a self-contained python library that runs on the cs1graphics library, and provides an interface that allows a users to dynamically generate parameterized tree objects on a canvas.
+This is a self-contained python library that runs on the cs1graphics library, and provides an interface that allows a users to dynamically generate parameterized tree objects on a canvas. I completed this project purely for my own personal amusement. 
+
+I wrote this when I was just beginning, and learning to use object orientation. I didn't really know a lot back then. When my professor had us work with a little graphics library called cs1graphics to learn how things like inheritance and object orientation work, I got a carried away. 
+
+We were initially tasked with using our (hardly existant) python skills to create an animation using this graphics library. I made an animation about a rabbit that eats souls, but nevermind that. I had to make a lot of trees for this idea, and making each one individually was a pain. I essentially had to manually define the shapes using giant arrays of coordinate points on the canvas. Each coordinate was set by hand, and that was very time consuming. 
+
+After the project, I started thinking about how basic tree shapes are pretty algorithmic, and I thought it would be cool to just make a little helper library to auto-generate trees for me. I then proceeded to write the code in treegen.py over some days. The main idea was that a (pine, specifically) tree starts with a certain width at the bottom, and then has branches that sweep downwards and outwards, becoming smaller and smaller, until they reach the peak of the tree. The design was symmetric with respect to the vertical axis of the tree. For the branch shape, I created a logic that first divided the tree into vertical slices, based on the user-defined number of branches, and then incrementally attenuated the branch size at each successive upward segment.
+
+I fully expect that if I look back into that spaghetti-mess of code, I would be quite horrified at my work, but that's not the point! I did something pretty fun and cool with the skills I possessed at the time. Perhaps one day I shall revisit this project, and expand the logic, and implement new types of trees. A recursive design that expands upward and outward would be quite cool!
